@@ -6,6 +6,7 @@
 
 Benefits of a library approach:
 
+- Reusable components
 - Auto generated documentation
 - Consistent look and feel
 - Consistent API
