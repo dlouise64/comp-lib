@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 /** A toggle component
 **/
@@ -20,12 +21,21 @@ class Toggle extends React.Component {
   render() {
     const {width} = this.props;
     return (
-      <div>
+      <Fragment>
         <button style={{width: `${width}px`}} onClick={this.toggle}>{this.state.show ? 'Hide' : 'Show'}</button>
         {this.state.show && <p>You found me!</p>}
-      </div>
+      </Fragment>
     )
   }
+}
+
+Toggle.propTypes = {
+  /** The width of the button */
+  width: PropTypes.integer
+}
+
+Toggle.defaultProps = {
+  width: 250
 }
 
 export default Toggle;
