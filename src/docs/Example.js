@@ -33,9 +33,9 @@ class Example extends React.Component {
         </div>
 
         <p>
-          <a href="#" onClick={this.toggleCode}>
+          <button style={{width: '150px'}} onClick={this.toggleCode}>
             {showCode ? "Hide" : "Show"} Code
-          </a>
+          </button>
         </p>
 
         {showCode && <CodeExample>{code}</CodeExample>}

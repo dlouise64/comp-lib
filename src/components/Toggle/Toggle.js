@@ -22,7 +22,7 @@ class Toggle extends React.Component {
     const {width} = this.props;
     return (
       <Fragment>
-        <button style={{width: `${width}px`}} onClick={this.toggle}>{this.state.show ? 'Hide' : 'Show'}</button>
+        <button style={{width: `${width}px`}} onClick={this.toggle}>{this.state.show ? 'Untoggle' : 'Toggle'}</button>
         {this.state.show && <p>You found me!</p>}
       </Fragment>
     )
