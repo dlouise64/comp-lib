@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/** This is the component description - add custom message. */
+
 const HelloWorld = ({message}) => {
   return <div>Hello {message}</div>
 }
