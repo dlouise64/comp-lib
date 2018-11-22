@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/dlouise64/comp-lib/precache-manifest.b8313ddc6a7e99819408c1d3f362e17c.js"
+  "/comp-lib/precache-manifest.23483545e86023bf8997bf08207c308f.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/dlouise64/comp-lib/index.html", {
+workbox.routing.registerNavigationRoute("/comp-lib/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
