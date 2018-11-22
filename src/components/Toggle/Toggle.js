@@ -31,7 +31,7 @@ class Toggle extends React.Component {
 
 Toggle.propTypes = {
   /** The width of the button */
-  width: PropTypes.integer
+  width: PropTypes.number
 }
 
 Toggle.defaultProps = {
