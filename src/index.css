@@ -114,3 +114,8 @@ button {
 .codeexample {
   margin: 30px 0 60px 0;
 }
+
+header {
+  overflow: auto;
+  padding: 0 15px;
+}
