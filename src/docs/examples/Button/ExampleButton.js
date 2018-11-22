@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Button from 'sil-react/Button';
 
 /** Includes several predefined button styles,
@@ -7,5 +7,40 @@ import Button from 'sil-react/Button';
 **/
 
 export default function ExampleButton() {
-  return <Button message="This is a button"/>
+  return <Fragment>
+    <p>
+      <Button />
+    </p>
+    <p>
+      <Button message="This is a button" />
+    </p>
+    <p>
+      <Button
+        message="This is a button"
+        theme="info"
+      />
+    </p>
+    <h3>Sizes</h3>
+    <p>
+      <Button
+        message="This is a button"
+        theme="info"
+        size="small"
+      />
+    </p>
+    <p>
+      <Button
+        message="This is a button"
+        theme="info"
+        size="medium"
+      />
+    </p>
+    <p>
+      <Button
+        message="This is a button"
+        theme="info"
+        size="large"
+      />
+    </p>
+  </Fragment>
 }

@@ -108,9 +108,16 @@ pre {
 }
 
 button {
-  padding: 15px;
-  font-size: 18px;
-  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: none;
+  color: #000;
+}
+
+button:active {
+  color: #000;
+  background: rgba(0, 0, 0, .4);
 }
 
 .codeexample {
@@ -174,4 +181,61 @@ header {
 
 .panel header.warning {
   background: rgb(252, 202, 170);
+}
+
+
+/* Button styles */
+
+.btn {
+  border-radius: 0;
+  margin: 0;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, .35);
+  cursor: pointer;
+}
+
+.btn:active {
+  background: rgba(0, 0, 0, .5);
+  color: #000;
+  cursor: pointer;
+}
+
+.btn.default {
+  background: rgb(174, 174, 174);
+}
+
+.btn.default:hover {
+  background: rgb(148, 148, 148);
+}
+
+.btn.info {
+  background: rgb(105, 172, 225);
+}
+
+.btn.info:hover {
+  background: rgb(96, 157, 206);
+}
+
+.btn.small {
+  padding: 5px 20px;
+  height: 40px;
+}
+
+.btn.medium {
+  padding: 10px 40px;
+  height: 50px;
+  font-size: 16px;
+}
+
+.btn.large {
+  padding: 20px 60px;
+  height: 60px;
+  font-size: 18px;
 }
