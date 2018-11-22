@@ -1,5 +1,5 @@
 import React from 'react';
-import HelloWorld from 'sil-react/HelloWorld/HelloWorld';
+import HelloWorld from 'sil-react/HelloWorld';
 
 /** Custom message */
 
