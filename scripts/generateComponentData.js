@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var chalk = require('chalk');
-var parse = require('react-docgen');
+var parse = require('react-docgen').parse;
 var chokidar = require('chokidar');
 
 var paths = {
@@ -21,11 +21,11 @@ if(enableWatchMode) {
 
 function generate(paths) {
   var errors = [];
-  var componentData = getDirectories(paths.components).map(function(componentName) {
+  var componentData = getDirectories(paths.components).map(componentName => {
     try {
       return getComponentData(paths, componentName)
     } catch(error) {
-      errors.push('An error occurred while attempting to generate metadata for ' + componentName + '. ' + error);
+      errors.push('error')
     }
   });
   writeFile(paths.output, "module.exports = " + JSON.stringify(errors.length ? errors : componentData));
