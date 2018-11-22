@@ -20,6 +20,8 @@ Benefits of a library approach:
 
 ## Installation
 
+Clone the project.
+
 In the project directory, you can run:
 
 ### `npm install`
