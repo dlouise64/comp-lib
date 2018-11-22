@@ -4,5 +4,7 @@ import HelloWorld from 'sil-react/HelloWorld';
 /** Custom message */
 
 export default function ExampleHelloWorld() {
-  return <HelloWorld message="Yo!" />
+  return <div>
+    <HelloWorld message="Yo!" />
+  </div>
 }
