@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-/** Use for actions in forms, dialogs, and more with support for multiple sizes, states, and more. */
+/** Used to display tabular data */
 
 const Table = ({data}) => {
   return <table>
