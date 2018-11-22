@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 const Navigation = ({components}) => {
   return (
-    <ul className="navigation">
+    <div className="navigation">
+      <h2>Components</h2>
+      <ul>
       {
         components.map( name => {
           return (
@@ -14,6 +16,7 @@ const Navigation = ({components}) => {
         })
       }
     </ul>
+    </div>
   )
 }
 

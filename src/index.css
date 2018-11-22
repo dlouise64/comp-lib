@@ -1,3 +1,7 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +15,87 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.left {
+  padding: 1em;
+  text-align: left;
+  margin: 0;
+  width: 200px;
+}
+
+.right {
+  padding: 1em;
+  flex-grow: 1;
+}
+
+.parent {
+  display: flex;
+  overflow: hidden;
+}
+
+.navigation > ul {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+}
+
+.navigation > h2 {
+  margin-top: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  border-bottom: 2px solid #000;
+  color: #000;
+  display: inline-block;
+  width: 190px;
+  padding: 10px;
+}
+
+.navigation a:hover { background: #ccc; }
+
+.navigation > ul { margin-top: 0; }
+
+.componentpage { padding-left: 20px; }
+
+.componentpage > h2 { margin-top: 0; }
+
+.hljs { padding: 1.5em !important; }
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+
+table > thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+table > thead > tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+table > th {
+  padding: .75rem;
+  vertical-align: top;
+  border: 1px solid #dee2e6;
+}
+th { text-align: left }
+
+table>tbody>tr>td,
+table>tbody>tr>th,
+table>tfoot>tr>td,
+table>tfoot>tr>th,
+table>thead>tr>td,
+table>thead>tr>th {
+  padding: .75rem;
+  vertical-align: top;
+  border: 1px solid #dee2e6;
 }

@@ -22,9 +22,13 @@ export default class Docs extends React.Component {
     const component = route ? componentData.filter( component => component.name === route )[0] : componentData[0];
 
     return (
-      <div>
-        <Navigation components={componentData.map(component => component.name)} />
-        <ComponentPage component={component} />
+      <div className="parent">
+        <div className="left">
+          <Navigation components={componentData.map(component => component.name)} />
+        </div>
+        <div className="right">
+          <ComponentPage component={component} />
+        </div>
       </div>
     )
   }
