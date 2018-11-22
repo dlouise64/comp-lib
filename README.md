@@ -1,6 +1,6 @@
 # Service Innovation Lab Component Library
 
-[View Demo](https://dlouise64.github.io/comp-lib/)
+<a href="https://dlouise64.github.io/comp-lib/" target="_blank">View Demo</a>
 
 ## Why does this Component Library exist?
 
