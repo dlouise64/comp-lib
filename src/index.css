@@ -91,14 +91,12 @@ table > th {
   vertical-align: top;
   border: 1px solid #dee2e6;
 }
+
 th { text-align: left }
 
-table>tbody>tr>td,
-table>tbody>tr>th,
-table>tfoot>tr>td,
-table>tfoot>tr>th,
-table>thead>tr>td,
-table>thead>tr>th {
+td,
+th
+{
   padding: .75rem;
   vertical-align: top;
   border: 1px solid #dee2e6;
