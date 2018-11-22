@@ -34,6 +34,10 @@ code {
   overflow: hidden;
 }
 
+.navigation ul {
+  margin-bottom: 40px;
+}
+
 .navigation > ul {
   padding-left: 0;
   list-style: none;
@@ -44,7 +48,7 @@ code {
   margin-top: 0;
 }
 
-.navigation a {
+.navigation > ul > li a {
   text-decoration: none;
   border-bottom: 2px solid #000;
   color: #000;
@@ -53,7 +57,7 @@ code {
   padding: 10px;
 }
 
-.navigation a:hover { background: #ccc; }
+.navigation > ul > li a:hover { background: #ccc; }
 
 .navigation > ul { margin-top: 0; }
 

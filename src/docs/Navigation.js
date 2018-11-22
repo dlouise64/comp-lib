@@ -15,7 +15,8 @@ const Navigation = ({components}) => {
           )
         })
       }
-    </ul>
+     </ul>
+     <a href="https://github.com/dlouise64/comp-lib">View on Github</a>
     </div>
   )
 }
