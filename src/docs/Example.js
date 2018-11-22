@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'props-types';
+import PropTypes from 'prop-types';
 
 class Example extends React.Component {
   constructor(props) {
