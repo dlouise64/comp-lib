@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Docs from './docs/Docs';
 import * as serviceWorker from './serviceWorker';
+import '../node_modules/highlight.js/styles/vs2015.css';
 
 ReactDOM.render(<Docs />, document.getElementById('root'));
 
