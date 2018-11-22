@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-/** This is the component description - add custom message. */
+/** Use for actions in forms, dialogs, and more with support for multiple sizes, states, and more. */
 
 const Button = ({message}) => {
-  return <div>Hello {message}</div>
+  return <button>{message}</button>
 }
 
 Button.propTypes = {
@@ -13,7 +13,7 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
-  message: 'World'
+  message: 'Submit'
 }
 
 export default Button;

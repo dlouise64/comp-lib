@@ -18,6 +18,7 @@ const ComponentPage = ({component}) => {
         examples.map( example => <Example key={example.code} example={example} componentName={name} /> ) :
         "No examples exist."
       }
+
       <h3>Props</h3>
       {
         props ?

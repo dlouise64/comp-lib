@@ -1,10 +1,11 @@
 import React from 'react';
 import Button from 'sil-react/Button';
 
-/** This is a button */
+/** Includes several predefined button styles,
+  * each serving its own semantic purpose,
+  * with a few extras thrown in for more control.
+**/
 
-export default function ExampleHelloWorld() {
-  return <div>
-    <Button message="Submit me now"/>
-  </div>
+export default function ExampleButton() {
+  return <Button message="This is a button"/>
 }
