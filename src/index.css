@@ -107,7 +107,7 @@ pre {
   box-sizing: border-box;
 }
 
-.codeexample {
+.codeExample {
   /* margin: 30px 0 60px 0; */
   border: 1px solid lightgray;
   padding: 20px;
@@ -137,6 +137,7 @@ button:active {
 }
 
 .btn {
+  padding: 10px 20px;
   border-radius: 0;
   margin: 0;
   border: none;
@@ -166,7 +167,8 @@ button:active {
 }
 
 .btn.info {
-  background: rgb(105, 172, 225);
+  color: #fff;
+  background: rgb(51, 114, 138);
 }
 
 .btn.info:hover {

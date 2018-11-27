@@ -119,6 +119,7 @@ exports[`<RegistrationForm /> renders correctly 1`] = `
   </p>
   <p>
     <input
+      className="btn info"
       onClick={[Function]}
       type="submit"
       value="Register"

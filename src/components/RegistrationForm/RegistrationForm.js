@@ -83,7 +83,7 @@ class RegistrationForm extends React.Component {
           />
         </p>
         <p>
-          <input type="submit" value="Register" onClick={this.onSubmit} />
+          <input className="btn info" type="submit" value="Register" onClick={this.onSubmit} />
         </p>
       </div>
     );

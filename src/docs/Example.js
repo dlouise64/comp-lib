@@ -28,7 +28,7 @@ class Example extends React.Component {
       <div>
         {description && <h4>{description}</h4>}
 
-        <div className="codeexample">
+        <div className="codeExample">
           <ExampleComponent />
           <p>
           <button style={{width: '150px'}} onClick={this.toggleCode}>
