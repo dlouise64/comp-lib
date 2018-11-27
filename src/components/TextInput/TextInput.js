@@ -1,14 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Label from '../Label';
-// import './TextInput.css';
+import './TextInput.css';
 
 /** Text input */
 function TextInput({htmlId, name, label, type="text", required=false, onChange, placeholder, value, error, children, ...props}) {
   return (
-    <div style={{marginBottom: 16}}>
+    <div style={{
+      marginBottom: 16,
+      position: 'relative',
+      display: 'inline-block'}}>
       <Label htmlFor={htmlId} label={label} required={required} />
       <input
+        className="textInput"
         id={htmlId}
         type={type}
         name={name}

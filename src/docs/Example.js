@@ -30,15 +30,13 @@ class Example extends React.Component {
 
         <div className="codeexample">
           <ExampleComponent />
-        </div>
-
-        <p>
+          <p>
           <button style={{width: '150px'}} onClick={this.toggleCode}>
             {showCode ? "Hide" : "Show"} Code
           </button>
         </p>
-
         {showCode && <CodeExample>{code}</CodeExample>}
+        </div>
       </div>
     )
   }
