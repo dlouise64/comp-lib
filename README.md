@@ -10,6 +10,11 @@ npm install sil-react
 npm run component
 ```
 
+## Delete all components and examples
+```
+npm run component:delAll
+```
+
 # Docs
 [Component documentation](https://dlouise64.github.io/comp-lib)
 
