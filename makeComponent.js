@@ -79,6 +79,5 @@ inquirer.prompt(questions).then(answers => {
   console.log('success: src/components/'+name+'/index.js');
   console.log('success: src/docs/examples/'+name+'/Example'+name+'.js');
 
-  // shell.exec('npm run stop');
   shell.exec('npm run start');
 });
