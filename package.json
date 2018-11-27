@@ -4,9 +4,11 @@
   "private": true,
   "homepage": "https://dlouise64.github.io/comp-lib",
   "dependencies": {
-    "@babel/core": "7.1.0",
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/runtime": "^7.1.5",
     "@svgr/webpack": "2.4.1",
-    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
     "babel-loader": "8.0.4",
@@ -41,10 +43,10 @@
     "postcss-loader": "3.0.0",
     "postcss-preset-env": "6.0.6",
     "postcss-safe-parser": "4.0.1",
-    "react": "^16.6.3",
+    "react": "^15.6.2",
     "react-app-polyfill": "^0.1.3",
     "react-dev-utils": "^6.1.1",
-    "react-dom": "^16.6.3",
+    "react-dom": "^15.6.2",
     "resolve": "1.8.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
@@ -64,7 +66,8 @@
     "build:docs": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "predeploy:docs": "npm run build:docs",
-    "deploy:docs": "gh-pages -d build"
+    "deploy:docs": "gh-pages -d build",
+    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -118,18 +121,35 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      [
+        "@babel/preset-env",
+        {
+          "modules": "commonjs"
+        }
+      ],
+      [
+        "react-app",
+        {
+          "helpers": false,
+          "absoluteRuntime": false
+        }
+      ]
     ]
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
     "chokidar": "^1.6.1",
+    "cpx": "^1.5.0",
+    "cross-env": "^4.0.0",
     "enzyme": "^3.7.0",
     "gh-pages": "^2.0.1",
     "npm-run-all": "^4.0.2",
     "prop-types": "^15.6.2",
     "react-addons-test-utils": "^15.6.2",
     "react-docgen": "^2.14.0",
-    "react-test-renderer": "^16.6.3"
+    "react-test-renderer": "^16.6.3",
+    "rimraf": "^2.6.1"
   },
   "files": [
     "lib"
