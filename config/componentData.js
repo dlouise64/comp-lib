@@ -1,1 +1,1 @@
-module.exports = []
+module.exports = [{"name":"Panel","description":"","code":"import React from 'react';\n// import PropTypes from 'prop-types';\n\nimport './Panel.css';\n\nclass Panel extends React.Component {\n  render() {\n    return (\n      <div className=\"panel\">Panel</div>\n    );\n  }\n}\n\nPanel.propTypes = {\n};\n\nPanel.defaultProps = {\n}\n\nexport default Panel;\n","examples":[]}]
