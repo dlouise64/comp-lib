@@ -4,7 +4,9 @@ exports[`<TextInput /> renders correctly 1`] = `
 <div
   style={
     Object {
+      "display": "inline-block",
       "marginBottom": 16,
+      "position": "relative",
     }
   }
 >
@@ -20,6 +22,7 @@ exports[`<TextInput /> renders correctly 1`] = `
      
   </label>
   <input
+    className="textInput"
     id="my_id"
     name="my_name"
     onChange={[Function]}
