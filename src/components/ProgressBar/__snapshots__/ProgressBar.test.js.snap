@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressBar /> renders correctly 1`] = `
+<div
+  className="progressBar"
+  style={
+    Object {
+      "border": "solid 1px lightgray",
+      "width": undefined,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "red",
+        "height": 5,
+        "width": NaN,
+      }
+    }
+  />
+</div>
+`;
