@@ -16,7 +16,7 @@ var questions = [
   {
     type: 'input',
     name: 'parent_css',
-    message: "parent css name (eg. panel):"
+    message: "Parent className (eg. panel):"
   }
 ];
 
