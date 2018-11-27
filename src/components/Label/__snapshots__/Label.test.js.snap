@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Label /> renders correctly 1`] = `
+<label
+  htmlFor="my_label"
+  style={
+    Object {
+      "display": "block",
+    }
+  }
+>
+  Sign in
+   
+</label>
+`;
