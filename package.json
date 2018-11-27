@@ -72,7 +72,9 @@
     "predeploy:docs": "npm run build:docs",
     "deploy:docs": "gh-pages -d build",
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
-    "component": "node makeComponent.js"
+    "component": "node makeComponent.js",
+    "component:delAll": "node delComponent.js"
+
   },
   "eslintConfig": {
     "extends": "react-app"

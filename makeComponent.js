@@ -44,8 +44,14 @@ inquirer.prompt(questions).then(answers => {
   // rename test file
   shell.mv(comp_dir+name+'/component.test.js', comp_dir+name+'/'+name+'.test.js')
 
+  // rename css file
+  shell.mv(comp_dir+name+'/component.css', comp_dir+name+'/'+name+'.css')
+
   // update index file
   shell.sed('-i', 'COMPONENT', './'+name, comp_named_dir+'index.js');
+
+  // update css file
+  shell.sed('-i', '.COMPONENT', '.'+answers.parent_css, comp_dir+name+'/'+name+'.css');
 
   // update component file
   shell.sed('-i', 'COMPONENT_NAME', name, comp_named_dir+name+'.js');
