@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextInput /> renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "marginBottom": 16,
+    }
+  }
+>
+  <label
+    htmlFor="my_id"
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    the label
+     
+  </label>
+  <input
+    id="my_id"
+    name="my_name"
+    onChange={[Function]}
+    type="text"
+  />
+</div>
+`;
