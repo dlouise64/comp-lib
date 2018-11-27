@@ -57,6 +57,10 @@ inquirer.prompt(questions).then(answers => {
   shell.sed('-i', 'COMPONENT_NAME', name, comp_named_dir+name+'.js');
   shell.sed('-i', 'className="CSS_NAME"', 'className="'+answers.parent_css+'"', comp_named_dir+name+'.js');
 
+  // update test file
+  shell.sed('-i', 'COMPONENT_NAME', name, comp_named_dir+name+'.test.js');
+  shell.sed('-i', 'DIR', `./${name}`, comp_named_dir+name+'.test.js');
+
   // make examples directory
   shell.mkdir(examples_dir+name+'/');
 
