@@ -1,6 +1,13 @@
 # Service Innovation Lab Component Library
 
-<a href="https://dlouise64.github.io/comp-lib/" target="_blank">View Demo</a>
+## Install
+```
+npm install sil-react
+```
+
+
+# Docs
+[Component documentation](https://dlouise64.github.io/comp-lib)
 
 ## Why does this Component Library exist?
 
