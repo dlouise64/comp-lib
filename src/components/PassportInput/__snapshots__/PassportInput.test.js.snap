@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PassportInput /> renders correctly 1`] = `
+<div
+  className="PassportInput"
+>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "marginBottom": 16,
+        "position": "relative",
+      }
+    }
+  >
+    <label
+      className="label"
+      htmlFor="registration-form-passport_no"
+      style={
+        Object {
+          "display": "inline-block",
+          "marginRight": "10px",
+        }
+      }
+    >
+      Passport no.
+       
+      <span
+        style={
+          Object {
+            "color": "red",
+          }
+        }
+      >
+         *
+      </span>
+    </label>
+    <input
+      className="textInput"
+      id="registration-form-passport_no"
+      name="passport_no"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <input
+    className="btn info"
+    onClick={[Function]}
+    style={
+      Object {
+        "marginLeft": "10px",
+      }
+    }
+    type="submit"
+    value="Submit"
+  />
+</div>
+`;

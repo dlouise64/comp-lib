@@ -11,10 +11,12 @@ exports[`<TextInput /> renders correctly 1`] = `
   }
 >
   <label
+    className="label"
     htmlFor="my_id"
     style={
       Object {
-        "display": "block",
+        "display": "inline-block",
+        "marginRight": "10px",
       }
     }
   >

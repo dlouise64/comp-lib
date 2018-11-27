@@ -138,10 +138,10 @@ button:active {
 
 .btn {
   padding: 10px 20px;
-  border-radius: 0;
+  font-size: 16px;
+  border-radius: 4px;
   margin: 0;
-  border: none;
-  font-size: 14px;
+  border: 1px solid transparent;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: .5px;
@@ -168,11 +168,11 @@ button:active {
 
 .btn.info {
   color: #fff;
-  background: rgb(51, 114, 138);
+  background: rgb(105, 172, 225);
 }
 
 .btn.info:hover {
-  background: rgb(96, 157, 206);
+  background: rgb(92, 149, 196);
 }
 
 .btn.small {

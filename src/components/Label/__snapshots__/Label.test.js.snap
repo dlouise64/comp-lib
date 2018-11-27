@@ -2,10 +2,12 @@
 
 exports[`<Label /> renders correctly 1`] = `
 <label
+  className="label"
   htmlFor="my_label"
   style={
     Object {
-      "display": "block",
+      "display": "inline-block",
+      "marginRight": "10px",
     }
   }
 >

@@ -22,7 +22,7 @@ function TextInput({htmlId, name, label, type="text", required=false, onChange, 
         style={error && { border: 'solid 1px red' }}
         {...props} />
         {children}
-        { error && <div className="error" style={{color: 'red'}}>{error}</div>}
+
     </div>
   )
 }

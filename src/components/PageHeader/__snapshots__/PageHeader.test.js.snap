@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageHeader /> renders correctly 1`] = `
+<h1
+  className="pageHeader"
+>
+  The Title
+</h1>
+`;

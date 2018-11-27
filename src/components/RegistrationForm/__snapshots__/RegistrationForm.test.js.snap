@@ -15,10 +15,12 @@ exports[`<RegistrationForm /> renders correctly 1`] = `
       }
     >
       <label
+        className="label"
         htmlFor="registration-form-email"
         style={
           Object {
-            "display": "block",
+            "display": "inline-block",
+            "marginRight": "10px",
           }
         }
       >
@@ -55,10 +57,12 @@ exports[`<RegistrationForm /> renders correctly 1`] = `
       }
     >
       <label
+        className="label"
         htmlFor="registration-form-password"
         style={
           Object {
-            "display": "block",
+            "display": "inline-block",
+            "marginRight": "10px",
           }
         }
       >
