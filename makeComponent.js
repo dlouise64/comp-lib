@@ -22,43 +22,47 @@ var questions = [
 
 inquirer.prompt(questions).then(answers => {
 
-  var root = 'src/components/';
+  let src = 'src/';
+  let components = 'components/';
+  let comp_dir = src+components;
+  let examples_dir = src+'docs/examples/';
+
   var name = answers.component_name;
   // make component dir
 
-  var components_dir = root+name+'/';
+  var comp_named_dir = comp_dir+name+'/';
 
   // make folder in component directory
-  shell.mkdir(root+name);
+  shell.mkdir(comp_dir+name);
 
   // copy component templates to component directory
-  shell.cp('-R', './ci-templates/components/*', components_dir);
+  shell.cp('-R', './ci-templates/components/*', comp_named_dir);
 
   // rename component file
-  shell.mv('src/components/'+name+'/component.js', 'src/components/'+name+'/'+name+'.js')
+  shell.mv(comp_dir+name+'/component.js', comp_dir+name+'/'+name+'.js')
 
   // rename test file
-  shell.mv('src/components/'+name+'/component.test.js', 'src/components/'+name+'/'+name+'.test.js')
+  shell.mv(comp_dir+name+'/component.test.js', comp_dir+name+'/'+name+'.test.js')
 
   // update index file
-  shell.sed('-i', 'COMPONENT', './'+name, components_dir+'index.js');
+  shell.sed('-i', 'COMPONENT', './'+name, comp_named_dir+'index.js');
 
   // update component file
-  shell.sed('-i', 'COMPONENT_NAME', name, components_dir+name+'.js');
-  shell.sed('-i', 'className="CSS_NAME"', 'className="'+answers.parent_css+'"', components_dir+name+'.js');
+  shell.sed('-i', 'COMPONENT_NAME', name, comp_named_dir+name+'.js');
+  shell.sed('-i', 'className="CSS_NAME"', 'className="'+answers.parent_css+'"', comp_named_dir+name+'.js');
 
   // make examples directory
-  shell.mkdir('src/docs/examples/'+name+'/');
+  shell.mkdir(examples_dir+name+'/');
 
   // copy example files
-  shell.cp('-R', './ci-templates/examples/*', 'src/docs/examples/'+name+'/');
+  shell.cp('-R', './ci-templates/examples/*', examples_dir+name+'/');
 
   // rename examples file
-  shell.mv('src/docs/examples/'+name+'/component.js', 'src/docs/examples/'+name+'/Example'+name+'.js')
+  shell.mv(examples_dir+name+'/component.js', examples_dir+name+'/Example'+name+'.js')
 
   // update examples file
-  shell.sed('-i', 'COMPONENT_NAME', name, 'src/docs/examples/'+name+'/Example'+name+'.js');
-  shell.sed('-i', 'sil-react/COMPONENT_NAME', 'sil-react/'+name, 'src/docs/examples/'+name+'/Example'+name+'.js');
+  shell.sed('-i', 'COMPONENT_NAME', name, examples_dir+name+'/Example'+name+'.js');
+  shell.sed('-i', 'sil-react/COMPONENT_NAME', 'sil-react/'+name, examples_dir+name+'/Example'+name+'.js');
 
   console.log('success: src/components/'+name+'/'+name+'.js');
   console.log('success: src/components/'+name+'/'+name+'.test.js');
