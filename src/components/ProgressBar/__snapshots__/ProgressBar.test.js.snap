@@ -6,7 +6,7 @@ exports[`<ProgressBar /> renders correctly 1`] = `
   style={
     Object {
       "border": "solid 1px lightgray",
-      "width": undefined,
+      "width": 150,
     }
   }
 >
@@ -15,7 +15,7 @@ exports[`<ProgressBar /> renders correctly 1`] = `
       Object {
         "backgroundColor": "red",
         "height": 5,
-        "width": NaN,
+        "width": 30,
       }
     }
   />
