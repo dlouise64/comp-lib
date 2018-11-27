@@ -5,6 +5,10 @@
 npm install sil-react
 ```
 
+## Generate a component
+```
+npm run component
+```
 
 # Docs
 [Component documentation](https://dlouise64.github.io/comp-lib)

@@ -108,7 +108,12 @@ pre {
 }
 
 .codeexample {
-  margin: 30px 0 60px 0;
+  /* margin: 30px 0 60px 0; */
+  border: 1px solid lightgray;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  padding-top: 60px;
 }
 
 header {
@@ -238,4 +243,21 @@ button:active {
   padding: 20px 60px;
   height: 60px;
   font-size: 18px;
+}
+
+.examplebtn {
+  padding: 5px 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: 0;
+  border-left: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 120px;
+}
+
+.examplebtn:hover {
+  background: lightgray;
+  cursor: pointer;
 }
