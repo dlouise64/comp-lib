@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Panel /> renders correctly 1`] = `
+<div
+  className="panel success"
+>
+  <header>
+    Panel title
+  </header>
+  <div>
+    Some content here
+  </div>
+</div>
+`;
